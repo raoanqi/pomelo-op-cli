@@ -1,0 +1,14 @@
+{
+  "name": "pomelo-op-cli",
+  "version": "1.0.0",
+  "description": "Generate Vue.js template file for CRUD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "晓月清岚",
+  "license": "MIT"
+}
