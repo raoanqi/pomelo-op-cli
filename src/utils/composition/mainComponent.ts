@@ -1,0 +1,1 @@
+export const genCompositionMainComponent = (meta): string => `main`

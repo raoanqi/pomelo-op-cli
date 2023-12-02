@@ -1,0 +1,1 @@
+export const genCompositionUpdateComponent = (meta): string => `update`

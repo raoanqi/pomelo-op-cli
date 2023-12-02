@@ -2,13 +2,27 @@
   "name": "pomelo-op-cli",
   "version": "1.0.0",
   "description": "Generate Vue.js template file for CRUD",
-  "main": "index.js",
+  "main": "src/index.ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "keywords": [
     "cli"
   ],
-  "author": "晓月清岚",
-  "license": "MIT"
+  "author": "晓月清岚1518014096@qq.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.2",
+    "prettier": "^3.1.0",
+    "ts-node-dev": "1.1.8",
+    "typescript": "5.0.2"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.12",
+    "kolorist": "^1.8.0"
+  }
 }

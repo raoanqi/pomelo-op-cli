@@ -1,0 +1,1 @@
+export const genOptionsDeleteComponent = (meta): string => `delete`

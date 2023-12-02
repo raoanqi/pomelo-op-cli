@@ -1,0 +1,1 @@
+export const genOptionsMainComponent = (meta): string => `main`
