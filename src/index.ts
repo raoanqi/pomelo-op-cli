@@ -1,13 +1,10 @@
-import { Command } from 'Commander'
-console.log(Command)
-// import { onCreate } from './command/create/index'
-//
-// const cmdInstance = new Command()
-// cmdInstance
-//   .command('create')
-//   .description('Create a new component')
-//   .option('-t --type <type>', 'Create Type: Dictionary')
-//   .action(onCreate)
-// cmdInstance.parse()
+import { Command } from 'commander'
+import { onCreate } from './command/create/index'
 
-console.log('一切顺利')
+const cmdInstance = new Command()
+cmdInstance
+  .command('create')
+  .description('Create a new component')
+  .option('-t --type <type>', 'Create Type: Dictionary')
+  .action(onCreate)
+  .parse()

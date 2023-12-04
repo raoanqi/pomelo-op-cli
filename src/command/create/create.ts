@@ -1,12 +1,13 @@
 import { ensureDirSync, writeFileSync } from 'fs-extra'
 import { resolve } from 'path'
-import { WRITE_FILE_OPTIONS } from '../../config/constant'
 import { genCompositionMainComponent } from '../../utils/composition/mainComponent'
 import { genCompositionUpdateComponent } from '../../utils/composition/updateComponent'
 import { genCompositionDeleteComponent } from '../../utils/composition/deleteComponent'
 import { genOptionsMainComponent } from '../../utils/options/mainComponent'
 import { genOptionsUpdateComponent } from '../../utils/options/updateComponent'
 import { genOptionsDeleteComponent } from '../../utils/options/deleteComponent'
+
+const WRITE_FILE_OPTIONS = 'utf-8'
 
 export const createFunc = (meta): void => {
   const { DictionaryName, ComponentName, VueComponentStyle } = meta

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+    "dev": "tsnd src/index.ts create"
   },
   "keywords": [
     "cli"
@@ -14,6 +14,8 @@
   "author": "晓月清岚1518014096@qq.com",
   "license": "MIT",
   "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
     "@types/node": "^20.10.2",
     "prettier": "^3.1.0",
     "ts-node-dev": "1.1.8",
